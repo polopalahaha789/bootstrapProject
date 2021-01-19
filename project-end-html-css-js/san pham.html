@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="san pham.css">
+</head>
+
+<body>
+    <header>
+        <!-- open top page container header-navbar -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <ul class="header-navbar-list">
+                        <li class="header-navbar-item header-navbar-item-has-qr header-navbar-item--separate">
+
+                            <a href=# title="">Vào cửa hàng ứng dụng</a>
+                            <div class="header-qr">
+                                <img src="./image/OIP.jpg" alt="QR code" class="header-qr-img">
+                                <div class="header-qr-apps">
+                                    <a class="header-qr-link">
+                                        <img src="./image/ch_play.png" alt="CH Play" class="header-qr-download-img">
+                                    </a>
+                                    <a class="header-qr-link">
+                                        <img src="./image/apstore.png" alt="Apstore" class="header-qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-navbar-item">
+                            <span class="header-navbar-item-no-pointer">
+                                <a href="#" title="">Liên Hệ Hỗ Trợ Online</a>
+                            </span>
+                            <a href="#" class="header-navbar-icon-link">
+                                <i class="header-navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="header-navbar-icon-link">
+                                <i class="header-navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="header_links">
+                        <ul class="header-navbar-list">
+                            <li class="header-navbar-item"><a href="" title=""><i
+                                        class="header-navbar-icon far fa-bell"></i> Thông
+                                    báo</a>
+                            </li>
+                            <li class="header-navbar-item"><a href="" title="tro giup">
+                                    <i class="header-navbar-icon far fa-question-circle"></i> Trợ giúp</a></li>
+                            <li class="header-navbar-item"><a href="" title="dang nhap">Đăng Nhập</a></li>
+                            <li class="header-navbar-item"><a href="" title="dang ki">Đăng Kí</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end top page container header-navbar -->
+        <!-- logo search cart -->
+        <div class="container ">
+            <div class="row">
+                <div class="col-11 ">
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand"><img
+                                    src="./image/set-cooking-quotes-label-typography-lettering_32550-36.jpg" alt=""></a>
+                            <form class="d-flex">
+                                <input class="form-control me-2" class="search-term" id="searchs" type="search"
+                                    placeholder="Search" aria-label="Search" onkeyup="searchfood()">
+                                <div class="valsearch"></div>
+                                <button class="btn btn-outline-success" type="submit"><i
+                                        class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-1">
+                    <div class="buynow">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart
+                            (<span class="total-count"></span>)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end logo search cart -->
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-2 list-food">
+                    <ul class="list-group" style="width: 200px;">
+                        <li class="list-group-item list"><a href="" title="Danh Sach"><i class="fas fa-utensils"></i>
+                                Danh Sách</a>
+                        </li>
+                        <li class="list-group-item"><a href="" title="Mon AU">Italian & Pizza</a></li>
+                        <li class="list-group-item"><a href="" title="Mon Nhat">Món Nhật & Shushi</li>
+                        <li class="list-group-item"><a href="" title="Thuc Uong">Cafe</li>
+                        <li class="list-group-item"><a href="" title="Mon Viet">Phở - Mì - Bún</li>
+                        <li class="list-group-item"><a href="" title="An Vat">Bánh Mì - Xôi</li>
+                    </ul>
+                </div>
+                <!--end menu left -->
+                <!-- favorite dishest -->
+                <!-- how to list -->
+                <div class="col-10 carousel-wrapper">
+                    <ul class="nav" style="margin-top: 20px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sắp Xếp Theo : </a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-secondary">Phổ Biến</button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-danger">Mới Nhất</button>
+                        </li>
+                        <li class="nav-item form">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Xác Nhận Giá</option>
+                                <option value="1">Giá Từ Thấp Đến Cao</option>
+                                <option value="2">Giá Từ Cao Xuống Thấp</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="row cart">
+                        <div class="col-5">
+                            <img src="./image/a5e37e7e-b2bb-4fc8-b5c8-f20a4461415b-03591-4_Big_King_XL_PR_Images_CR2.jpg" alt="">
+                        </div>
+                        <div class="col-7 product" data-price="140.000" data-quantity="2">
+                            <div class="product-paper">
+                                <h1 class="product-name">Buger King</h1>
+                                <p><strong>Nguyên Liệu Cơ Bản</strong>: Vỏ bánh bugger đặt biệt, xà lách, thịt được nhập
+                                    từ Úc làm theo công thức bugger king, gia vị, phô mai... "</p>
+                                <div class="star"> <h3>Đánh Giá: </h3> 
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="product-interactions">
+                                    <button type="button" class="minus btn btn-primary">-</button>
+                                    <div class="product-quantity">x1</div>
+                                    <button type="button" class="plus btn btn-primary">+</button>
+                                </div>
+                                <h3 class="product-price">Giá niêm yết: 140.000 vnd</h3>
+                            </div>
+                            <div class="carts">
+                                <a><button type="button" id="pay" class=" add-to-cart btn btn-primary" data-target="#cart">Order now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h3 class="footer-heading">Giới thiệu</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="./gioi thieu pizza.html" class="footer-item-link">Giới thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item-link">Tuyển dụng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item-link">Điều khoản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3 class="footer-heading">Theo dõi</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="#" class="footer-item-link">
+                                <i class="fab fa-facebook footer-item-icon"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item-link">
+                                <i class="fab fa-instagram footer-item-icon"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item-link">
+                                <i class="fab fa-linkedin footer-item-icon"></i>
+                                Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3 class="footer-heading">Danh mục</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="#" class="footer-item-link">Món Việt</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item-link">Món Hàn NhậtNhật</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item-link">Món Châu Âu</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 footer-app">
+                    <h3 class="footer-heading">Cửa hàng trên ứng dụng</h3>
+                    <div class="footer-download">
+                        <img src="./image/OIP.jpg" class="footer-download-qr">
+                        <div class="footer-download-apps">
+                            <a href="#" class="footer-download-app-link">
+                                <img src="./image/ch_play.png" class="footer-download-app-img">
+                            </a>
+                            <a href="#" class="footer-download-app-link">
+                                <img src="./image/apstore.png" class="footer-download-app-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="./jquery-3.2.1.slim.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="./san pham.js"></script>
+</body>
+
+</html>
